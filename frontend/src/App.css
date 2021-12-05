@@ -1,12 +1,12 @@
 body{
-  font-family: 'Droid Serif', serif;
+  font-family: 'Nanum Gothic', serif;
   font-size: 14px;
   color: #2f2f2f;
   background-color: #f9f7f1;
 }
 header{
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
+  font-family: 'Nanum Gothic ExtraBold', serif;
+  /*font-weight: 900;*/
   font-size: 80px;
   text-transform: uppercase;
   display: inline-block;
@@ -74,7 +74,7 @@ p{
 .collumn .headline{
   text-align: center;
   line-height: normal;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Nanum Gothic Bold', serif;
   display: block;
   margin: 0 auto;
 
@@ -211,7 +211,6 @@ p{
   display: block;
   margin: 40px 0 40px 0;
   font-feature-settings: "liga", "dlig";
-
 }
 .collumn .citation:before{
   border-top: 1px solid #2f2f2f;

@@ -9,13 +9,14 @@ const NewsPage = ({match}) => {
     <>
       <div className="head">
         <div className="headerobjectswrapper">
-          <div className="weatherforcastbox">
-            <span style={{fontStyle: "italic"}}>
-              Weatherforcast for the next 24 hours: Plenty of Sunshine
-            </span>
-            <br/>
-            <span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span>
-          </div>
+          {/*날씨*/}
+          {/*<div className="weatherforcastbox">*/}
+          {/*  <span style={{fontStyle: "italic"}}>*/}
+          {/*    Weatherforcast for the next 24 hours: Plenty of Sunshine*/}
+          {/*  </span>*/}
+          {/*  <br/>*/}
+          {/*  <span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span>*/}
+          {/*</div>*/}
           <header>현뉴스</header>
         </div>
 
