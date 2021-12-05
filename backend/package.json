@@ -4,13 +4,18 @@
     "dotenv": "^10.0.0",
     "koa": "^2.13.4",
     "koa-cors": "^0.0.16",
-    "koa-router": "^10.1.1"
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "start": "node src",
-    "start:dev": "nodemon --watch src/ src/index.js"
+    "dev": "nodemon --watch src/ src/index.js",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/web.js"
   }
 }
