@@ -1,8 +1,8 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";
-import {AppNames} from "../common/AppNames";
-import {CategoryType} from "../common/AppTypes";
+import {AppNames} from "../../common/AppNames";
+import {CategoryType} from "../../common/AppTypes";
 
 const Category = styled(NavLink)`
   font-size: 1.125rem;
@@ -34,16 +34,21 @@ const Category = styled(NavLink)`
 const Categories = () => {
   return (
     <>
-      {Object.keys(CategoryType).map((type) => (
-        <Category
-          key={type}
-          activeClassName="active"
-          exact={type === CategoryType.all}
-          to={type === CategoryType.all ? "/" : `/${type}`}
-        >
-          {AppNames.CategoryType(type)}
-        </Category>
-      ))}
+      {
+        Object.keys(CategoryType).map((type) => {
+          const isAllType = type === CategoryType.all;
+          return (
+            <Category
+              key={type}
+              activeClassName="active"
+              exact={isAllType}
+              to={isAllType ? "/" : `/${type}`} // 링크값 이동
+            >
+              {AppNames.CategoryType(type)}
+            </Category>
+          );
+        })
+      }
     </>
   );
 };

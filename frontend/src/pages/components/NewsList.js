@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from 'react';
-import {CategoryType} from "../common/AppTypes";
-import usePromise from "../lib/usePromise";
+import {CategoryType} from "../../common/AppTypes";
+import usePromise from "../../lib/usePromise";
 import NewsItem from "./NewsItem";
 
 const NewsList = ({ category }) => {
@@ -19,7 +19,6 @@ const NewsList = ({ category }) => {
   }
 
   const { articles } = response.data;
-  console.log('response:', response);
   return (
     <div className="collumns">
       {
@@ -31,4 +30,4 @@ const NewsList = ({ category }) => {
   )
 }
 
-export default NewsList;
+export default React.memo(NewsList);

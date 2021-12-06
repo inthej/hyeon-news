@@ -14,6 +14,7 @@ $ yarn add koa-send
 ```
 
 ## Reference
-- Cafe24 Node.js 호스팅 배포 [https://blog.naver.com/donggyu_00/221450468127](https://blog.naver.com/donggyu_00/221450468127)
-- koa-cors [https://stackoverflow.com/questions/53871292/how-to-allow-access-control-allow-origin-with-koa](https://stackoverflow.com/questions/53871292/how-to-allow-access-control-allow-origin-with-koa)
-- koa-static [https://thebook.io/080203/ch27/04/02-01/](https://thebook.io/080203/ch27/04/02-01/)
+- Cafe24 Node.js 호스팅 배포: [https://blog.naver.com/donggyu_00/221450468127](https://blog.naver.com/donggyu_00/221450468127)
+- koa-cors: [https://stackoverflow.com/questions/53871292/how-to-allow-access-control-allow-origin-with-koa](https://stackoverflow.com/questions/53871292/how-to-allow-access-control-allow-origin-with-koa)
+- koa-static: [https://thebook.io/080203/ch27/04/02-01/](https://thebook.io/080203/ch27/04/02-01/)
+- require, module.exports: [https://m.blog.naver.com/jdub7138/221022257248](https://m.blog.naver.com/jdub7138/221022257248)

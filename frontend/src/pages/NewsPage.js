@@ -1,7 +1,7 @@
 import React from "react";
 import {CategoryType} from "../common/AppTypes";
-import Categories from "../components/Categories";
-import NewsList from "../components/NewsList";
+import Categories from "./components/Categories";
+import NewsList from "./components/NewsList";
 
 const NewsPage = ({match}) => {
   const category = match.params.category || CategoryType.all;

@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import {ValueUtils} from "../common/utils/ValueUtils";
+import {ValueUtils} from "../../common/utils/ValueUtils";
 
 const NewsItem = ({ article }) => {
   const {source, author, title, description, url, urlToImage, publishedAt, content} = article;
@@ -28,4 +28,4 @@ const NewsItem = ({ article }) => {
   );
 }
 
-export default NewsItem;
+export default React.memo(NewsItem);
