@@ -39,6 +39,7 @@ const Categories = () => {
           const isAllType = type === CategoryType.all;
           return (
             <Category
+              className="category"
               key={type}
               activeClassName="active"
               exact={isAllType}

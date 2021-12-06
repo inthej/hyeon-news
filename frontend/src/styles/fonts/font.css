@@ -54,3 +54,60 @@
     font-weight: 800;
     font-style: normal;
 }
+
+@font-face {
+    /* 사용할 폰트의 이름 */
+    font-family: "Nanum Myeongjo";
+    font-display: fallback;
+
+    /*
+      src: 사용할 폰트의 위치 및 형식
+      Safari, Android, iOS => ttf
+      Modern Browsers => woff
+      IE6-IE8 => eot
+    */
+    src: url("./NanumMyeongjo-Regular.ttf") format("truetype"), url("./NanumMyeongjo-Regular.woff")
+    format("woff"), url("./NanumMyeongjo-Regular.eot?iefix") format("embedded-opentype");
+
+    /* 사용할 폰트의 기본 스타일 */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    /* 사용할 폰트의 이름 */
+    font-family: "Nanum Myeongjo Bold";
+    font-display: fallback;
+
+    /*
+      src: 사용할 폰트의 위치 및 형식
+      Safari, Android, iOS => ttf
+      Modern Browsers => woff
+      IE6-IE8 => eot
+    */
+    src: url("./NanumMyeongjo-Bold.ttf") format("truetype"), url("./NanumMyeongjo-Bold.woff")
+    format("woff"), url("./NanumMyeongjo-Bold.eot?iefix") format("embedded-opentype");
+
+    /* 사용할 폰트의 기본 스타일 */
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    /* 사용할 폰트의 이름 */
+    font-family: "Nanum Myeongjo ExtraBold";
+    font-display: fallback;
+
+    /*
+      src: 사용할 폰트의 위치 및 형식
+      Safari, Android, iOS => ttf
+      Modern Browsers => woff
+      IE6-IE8 => eot
+    */
+    src: url("./NanumMyeongjo-ExtraBold.ttf") format("truetype"), url("./NanumMyeongjo-ExtraBold.woff")
+    format("woff"), url("./NanumMyeongjo-ExtraBold.eot?iefix") format("embedded-opentype");
+
+    /* 사용할 폰트의 기본 스타일 */
+    font-weight: 800;
+    font-style: normal;
+}

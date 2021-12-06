@@ -19,10 +19,10 @@ const NewsPage = ({match}) => {
           {/*</div>*/}
           <header>현뉴스</header>
         </div>
+      </div>
 
-        <div className="subhead">
-          <Categories/>
-        </div>
+      <div className="subhead category-container">
+        <Categories/>
       </div>
 
       <div className="content">
