@@ -1,9 +1,9 @@
 body{
+    width: 100%;
     font-family: 'Nanum Myeongjo', serif;
     font-size: 14px;
     color: #2f2f2f;
     background-color: #f9f7f1;
-    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -33,7 +33,7 @@ p{
     text-transform: uppercase;
     border-bottom: 2px solid #2f2f2f;
     border-top: 2px solid #2f2f2f;
-    padding: 10px 0 2px 0;
+    padding: 10px 2px 2px 2px;
 
     /*sticky*/
     background-color: #f9f7f1;
@@ -63,11 +63,12 @@ p{
     margin: 0 50px 20px -360px;
 }
 .content{
+    width: 100%;
     font-size: 0;
     line-height: 0;
     word-spacing: -.31em;
     display: inline-block;
-    margin: 30px 2% 0 2%;
+    margin: 30px 0 0 0;
 }
 .collumns{
 
