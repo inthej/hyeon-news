@@ -1,7 +1,7 @@
 body{
     width: 100%;
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 14px;
+    font-size: 17px;
     color: #2f2f2f;
     background-color: #f9f7f1;
     margin: 0;
@@ -75,7 +75,7 @@ p{
 }
 
 .collumn{
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
     width: 17.5%;
     display: inline-block;
