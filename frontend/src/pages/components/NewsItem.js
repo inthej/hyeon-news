@@ -24,7 +24,7 @@ const NewsItem = ({ article }) => {
         {name && <figcaption className="figcaption">{name}</figcaption>}
       </figure>
 
-      {description && <p>{description}</p>}
+      {description && <p className="description">{description}</p>}
     </div>
   );
 }

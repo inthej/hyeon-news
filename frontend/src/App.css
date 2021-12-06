@@ -4,17 +4,15 @@ body{
     color: #2f2f2f;
     background-color: #f9f7f1;
 }
-/*header{*/
-/*    font-family: 'Nanum Gothic ExtraBold', serif;*/
-/*    font-weight: 900;*/
-/*    font-size: 80px;*/
-/*    text-transform: uppercase;*/
-/*    display: inline-block;*/
-/*    line-height: 72px;*/
-/*    margin-bottom: 20px;*/
-
-/*    text-decoration: none;*/
-/*}*/
+header{
+    font-family: 'Nanum Gothic ExtraBold', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
 p{
     margin-top: 0;
     margin-bottom: 20px;
@@ -248,6 +246,9 @@ p{
 .collumn .figcaption{
     font-style: italic;
     font-size: 12px;
+}
+.collumn .description{
+    overflow: hidden;
 }
 .media {
     /* 미디어 흑백 처리 */
