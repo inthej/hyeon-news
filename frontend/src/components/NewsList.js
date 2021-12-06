@@ -7,7 +7,7 @@ import NewsItem from "./NewsItem";
 const NewsList = ({ category }) => {
   const [loading, response, error] = usePromise(() => {
     const param = category === CategoryType.all ? '' : `/${category}`;
-    return axios.get(`/news${param}`);
+    return axios.get(`/api/news${param}`);
   }, [category]);
 
   if (loading) {
