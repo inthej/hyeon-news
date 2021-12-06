@@ -1,4 +1,5 @@
 import React, {useCallback} from 'react';
+import {MomentUtils} from "../../common/utils/MomentUtils";
 import {ValueUtils} from "../../common/utils/ValueUtils";
 
 const NewsItem = ({ article }) => {
@@ -14,7 +15,7 @@ const NewsItem = ({ article }) => {
       <div className="head">
         <span className="headline hl1">{ValueUtils.nvl(title)}</span>
         <p>
-          <span className="headline hl6">{ValueUtils.nvl(publishedAt)}</span>
+          <span className="headline hl6">{MomentUtils.dt2dateTime(publishedAt, 'YYYY-MM-DD HH:mm:ss')}</span>
         </p>
       </div>
 

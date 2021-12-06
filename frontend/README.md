@@ -7,6 +7,7 @@ $ yarn add react-router-dom
 $ yarn add styled-components
 $ yarn add axios
 $ yarn add --dev --exact prettier
+$ yarn add moment
 ```
 
 ## Reference
