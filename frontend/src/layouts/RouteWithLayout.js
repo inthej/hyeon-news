@@ -17,7 +17,7 @@ const RouteWithLayout = props => {
 }
 
 RouteWithLayout.propTypes = {
-  component: PropTypes.node.isRequired,
+  component: PropTypes.any.isRequired,
   layout: PropTypes.any.isRequired,
   path: PropTypes.string
 }

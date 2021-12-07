@@ -8,18 +8,17 @@ const Container = styled.div`
 `;
 
 const News = (props) => {
-  const {className, match} = props;
+  const {match, history} = props;
   const category = match.params.category || CategoryType.all;
 
   return (
-    <Container className={className}>
+    <Container>
       <NewsList category={category}/>
     </Container>
   );
 };
 
 News.propTypes = {
-  className: PropTypes.string,
   match: PropTypes.object.isRequired
 }
 

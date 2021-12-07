@@ -12,8 +12,9 @@ export default function usePromise(promiseCreator, deps) {
       setResolved(resolved);
     } catch (e) {
       setError(e);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   }
 
   useEffect(() => {

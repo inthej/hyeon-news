@@ -1,18 +1,21 @@
-import {BrowserRouter, Redirect, Switch} from 'react-router-dom';
+import {Redirect, Switch, withRouter} from 'react-router-dom';
 import './App.css';
-import Main from "./layouts/Main";
 import RouteWithLayout from "./layouts";
+import Main from "./layouts/Main";
 import News from "./pages/News";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <Switch>
-        <Redirect exact from="/" to="news" />
-        <RouteWithLayout path="/news/:category?" layout={Main} component={News} />
+        <Redirect exact from="/" to="news"/>
+        <RouteWithLayout path="/news/:category?" layout={Main} component={News}/>
+        <RouteWithLayout path="/not-found" layout={Main} component={NotFound}/>
+        <Redirect to="/not-found"/>
       </Switch>
-    </BrowserRouter>
+    </>
   );
 }
 
-export default App;
+export default withRouter(App);
