@@ -254,6 +254,7 @@ p{
 }
 .collumn .description{
     overflow: hidden;
+    line-height: 1.58;
 }
 .media {
     /* 미디어 흑백 처리 */
