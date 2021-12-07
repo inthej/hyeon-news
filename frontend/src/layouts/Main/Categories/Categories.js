@@ -1,8 +1,12 @@
+import PropTypes from 'prop-types';
 import React from "react";
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";
-import {AppNames} from "../../common/AppNames";
-import {CategoryType} from "../../common/AppTypes";
+import {AppNames} from "../../../common/AppNames";
+import {CategoryType} from "../../../common/AppTypes";
+
+const Container = styled.div`
+`;
 
 const Category = styled(NavLink)`
   font-size: 1.125rem;
@@ -31,9 +35,10 @@ const Category = styled(NavLink)`
   }
 `;
 
-const Categories = () => {
+const Categories = props => {
+  const { className } = props;
   return (
-    <>
+    <Container className={className}>
       {
         Object.keys(CategoryType).map((type) => {
           const isAllType = type === CategoryType.all;
@@ -43,15 +48,19 @@ const Categories = () => {
               key={type}
               activeClassName="active"
               exact={isAllType}
-              to={isAllType ? "/" : `/${type}`} // 링크값 이동
+              to={isAllType ? "/news" : `/news/${type}`} // 링크값 이동
             >
               {AppNames.CategoryType(type)}
             </Category>
           );
         })
       }
-    </>
+    </Container>
   );
 };
+
+React.propTypes = {
+  className: PropTypes.string
+}
 
 export default Categories;

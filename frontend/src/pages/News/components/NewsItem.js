@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
-import {MomentUtils} from "../../common/utils/MomentUtils";
-import {ValueUtils} from "../../common/utils/ValueUtils";
+import {MomentUtils} from "../../../common/utils/MomentUtils";
+import {ValueUtils} from "../../../common/utils/ValueUtils";
 
 const NewsItem = ({ article }) => {
   const {source, author, title, description, url, urlToImage, publishedAt, content} = article;

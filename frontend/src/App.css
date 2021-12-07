@@ -38,7 +38,7 @@ p{
     /*sticky*/
     background-color: #f9f7f1;
     position:sticky;
-    z-index: 999;
+    z-index: 1;
     top:0;
     opacity: 1;
 }

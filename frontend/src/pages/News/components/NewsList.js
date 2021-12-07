@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from 'react';
-import {CategoryType} from "../../common/AppTypes";
-import usePromise from "../../lib/usePromise";
+import {CategoryType} from "../../../common/AppTypes";
+import usePromise from "../../../lib/usePromise";
 import NewsItem from "./NewsItem";
 
 const NewsList = ({ category }) => {

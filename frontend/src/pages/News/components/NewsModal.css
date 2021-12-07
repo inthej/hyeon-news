@@ -1,0 +1,20 @@
+.ReactModal__Overlay--after-open{
+    z-index: 2;
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.ReactModal__Content--after-open {
+    inset: 20px !important;
+    padding: 0 !important;
+}
