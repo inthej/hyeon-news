@@ -6,6 +6,31 @@ import {AppNames} from "../../../common/AppNames";
 import {CategoryType} from "../../../common/AppTypes";
 
 const Container = styled.div`
+  text-transform: uppercase;
+  border-bottom: 2px solid #2f2f2f;
+  border-top: 2px solid #2f2f2f;
+  padding: 10px 5px 2px 5px;
+
+  /*sticky*/
+  background-color: #f9f7f1;
+  position:sticky;
+  z-index: 1;
+  top:0;
+  opacity: 1;
+  
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  @media only all and (max-width: 600px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding-left: 10px;
+  }
 `;
 
 const Category = styled(NavLink)`

@@ -20,3 +20,5 @@ $ yarn add react-modal
 - CSS Position Sticky: [https://juahnpop.tistory.com/182](https://juahnpop.tistory.com/182)
 - 신문사 폰트: [https://dadoc.or.kr/1064](https://dadoc.or.kr/1064)
 - Modal Overlay scroll: [https://blueshw.github.io/2019/04/24/prevent-scroll-outside/](https://blueshw.github.io/2019/04/24/prevent-scroll-outside/)
+- 날씨: [https://velog.io/@latte_h/%ED%98%84%EC%9E%AC-%EC%9C%84%EC%B9%98%EC%9D%98-%EB%82%A0%EC%94%A8-%EC%A0%95%EB%B3%B4-%ED%91%9C%EC%8B%9C](https://velog.io/@latte_h/%ED%98%84%EC%9E%AC-%EC%9C%84%EC%B9%98%EC%9D%98-%EB%82%A0%EC%94%A8-%EC%A0%95%EB%B3%B4-%ED%91%9C%EC%8B%9C)
+- CSS접두어: [https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048](https://code.tutsplus.com/ko/tutorials/the-30-css-selectors-you-must-memorize--net-16048)

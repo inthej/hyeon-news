@@ -1,10 +1,16 @@
 import axios from "axios";
 import React from 'react';
+import styled from "styled-components";
 import {CategoryType} from "../../../common/AppTypes";
 import usePromise from "../../../lib/usePromise";
 import NewsItem from "./NewsItem";
 
-const NewsList = ({ category }) => {
+const Container = styled.div`
+  padding: 0 10px;
+`;
+
+const NewsList = props => {
+  const { className, category } = props;
   const [loading, response, error] = usePromise(() => {
     const param = category === CategoryType.all ? '' : `/${category}`;
     return axios.get(`/api/news${param}`);
@@ -20,13 +26,13 @@ const NewsList = ({ category }) => {
 
   const { articles } = response.data;
   return (
-    <div className="collumns">
+    <Container className={className}>
       {
         articles.map((article, index) => (
-          <NewsItem key={index} article={article}/>
+          <NewsItem className="column" key={index} article={article}/>
         ))
       }
-    </div>
+    </Container>
   )
 }
 

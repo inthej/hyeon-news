@@ -8,11 +8,11 @@ const Main = props => {
   const {children} = props;
   return (
     <>
-      <Header className="head"/>
+      <Header className="header"/>
 
-      <Categories className="subhead category-container"/>
+      <Categories className="subhead"/>
 
-      <Content>
+      <Content className='content'>
         {children}
       </Content>
     </>

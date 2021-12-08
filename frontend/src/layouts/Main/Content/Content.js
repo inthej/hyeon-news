@@ -2,7 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  word-spacing: -.31em;
+  display: inline-block;
+  margin: 30px 0 0 0;
+`;
 
 const Content = props => {
   const {className, children} = props;

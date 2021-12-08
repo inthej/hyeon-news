@@ -13,7 +13,7 @@ const News = (props) => {
 
   return (
     <Container>
-      <NewsList category={category}/>
+      <NewsList className="columns" category={category}/>
     </Container>
   );
 };
