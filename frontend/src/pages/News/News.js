@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 
 const News = (props) => {
-  const {match, history} = props;
+  const {history, location, match, staticContext} = props;
   const category = match.params.category || CategoryType.all;
 
   return (
@@ -19,7 +19,10 @@ const News = (props) => {
 };
 
 News.propTypes = {
-  match: PropTypes.object.isRequired
+  history: PropTypes.object,
+  location: PropTypes.object,
+  match: PropTypes.object
+  // staticContext: PropTypes.object
 }
 
 export default News;

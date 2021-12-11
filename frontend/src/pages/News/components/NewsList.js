@@ -1,4 +1,5 @@
 import axios from "axios";
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from "styled-components";
 import {CategoryType} from "../../../common/AppTypes";
@@ -34,6 +35,11 @@ const NewsList = props => {
       }
     </Container>
   )
+}
+
+React.propTypes = {
+  className: PropTypes.string,
+  category: PropTypes.string
 }
 
 export default React.memo(NewsList);

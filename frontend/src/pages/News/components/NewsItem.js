@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, {useCallback} from 'react';
 import styled from "styled-components";
 import {MomentUtils} from "../../../common/utils/MomentUtils";
@@ -63,6 +64,11 @@ const NewsItem = props => {
       {description && <p className="description">{description}</p>}
     </Container>
   );
+}
+
+React.propTypes = {
+  className: PropTypes.string,
+  article: PropTypes.object
 }
 
 export default React.memo(NewsItem);

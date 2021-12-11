@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, {useEffect, useState} from 'react';
 import Modal from 'react-modal';
 import './NewsModal.css';
@@ -35,6 +36,11 @@ const NewsModal = props => {
       </div>
     </Modal>
   )
+}
+
+React.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  url: PropTypes.string
 }
 
 export default NewsModal;

@@ -6,8 +6,13 @@ import News from "./pages/News";
 import NotFound from "./pages/NotFound";
 
 const GlobalStyle = createGlobalStyle`
+  html {
+    height: 100%;
+    margin: 0;
+  }
   body {
     width: 100%;
+    height: 100%;
     font-family: 'Nanum Gothic', serif;
     font-size: 17px;
     color: #2f2f2f;
