@@ -3,6 +3,7 @@ import React from 'react';
 import styled from "styled-components";
 import {ReactComponent as GitHub} from "../../../assets/svg/github.svg";
 import {ReactComponent as Twitter} from "../../../assets/svg/twitter.svg";
+import {ReactComponent as Blog} from "../../../assets/svg/blogger-svgrepo-com.svg";
 import theme from "../../../theme";
 
 const Container = styled.div`
@@ -13,8 +14,6 @@ const Container = styled.div`
   padding: 15px 32px;
   justify-content: space-between;
   align-items: center;
-  
-  
 `;
 
 const LeftWrap = styled.div`
@@ -56,13 +55,18 @@ const Footer = props => {
       <LeftWrap className="footer-left-wrap">
         <Contact className="contact">
           <ContactItem className="contact-item">
-            <a href="https://github.com/inthej" target="_blank" rel="noopener noreferrer" className="nav-link external">
+            <a href="https://github.com/inthej" target="_blank" rel="noopener noreferrer">
               <GitHub color={theme.gray}/>
             </a>
           </ContactItem>
           <ContactItem>
-            <a href="https://twitter.com/inthej12" target="_blank" rel="noopener noreferrer" className="nav-link external">
+            <a href="https://twitter.com/inthej12" target="_blank" rel="noopener noreferrer">
               <Twitter color={theme.gray}/>
+            </a>
+          </ContactItem>
+          <ContactItem>
+            <a href="https://inthej.com/" target="_blank" rel="noopener noreferrer">
+              <Blog color={theme.gray}/>
             </a>
           </ContactItem>
         </Contact>
