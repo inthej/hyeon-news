@@ -27,6 +27,7 @@ const Contact = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   
+  list-style: none;
   padding: 0;
   margin: 0;
 `;
@@ -39,6 +40,7 @@ const ContactItem = styled.li`
 const Copyright = styled.ul`
   padding: 0;
   margin: 0;
+  list-style: none;
 `;
 
 
@@ -75,7 +77,7 @@ const Footer = props => {
       <RightWrap className="footer-right-wrap">
         <Copyright className="copyright">
           <CopyrightItem className="copyright-item">
-            Copyright Jaehyeon Kim 2021
+            Copyright © Jaehyeon Kim 2021
           </CopyrightItem>
         </Copyright>
       </RightWrap>
